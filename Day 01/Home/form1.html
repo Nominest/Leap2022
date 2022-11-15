@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 1</title>
+    <link rel="stylesheet" href="form1style.css">
+</head>
+<body>
+    <h1>Travel reservation form</h3>
+<form action="">
+    <label>Full Name*</label>
+    <input type="text" name="" id="" placeholder="FirstName LastName" required>
+    <label>Email address*</label>
+    <input type="email" name="" id="" placeholder="EMAIL_ADDRESS" required>
+    <label>Select Tour Package*</label>
+    <select name="" id="selector" required>
+        <option value="">Gold</option>
+        <option value="">Silver</option>
+        <option value="">Bronze</option>
+    </select>
+    <label>Arrival Date*</label>
+    <input type="date" name="" id="" required>
+    <label>Number of persons*</label>
+    <input type="number" placeholder="UNKNOWN_TYPE" required>
+    <label>What would you want to avail?*</label>
+    <div class="row">
+        <label for="">Boarding</label>
+        <input type="radio" name="avail"required/> 
+    </div>
+    <div class="row">
+        <label for="">Fooding</label>
+        <input type="radio" name="avail" required/> 
+    </div>
+    <div class="row">
+        <label for="">Sight seeing</label>
+        <input type="radio" name="avail" required/> 
+    </div>
+    <label for="">Discount Coupon code</label>
+    <input type="text" placeholder="UNKNOWN_TYPE">
+    <label for="">Terms and conditions*</label>
+    <div class="row">
+        <input type="radio" name="Terms" id="" required>
+        <label for="">I agree</label>
+        <input type="radio" name="Terms" id="" required>
+        <label for="">I disagree</label>
+    </div>
+    <input type="submit" value="Complete reservation">
+</form>
+    
+</body>
+</html>
