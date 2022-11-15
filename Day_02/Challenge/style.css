@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+header {
+  background: url(./perceptual-standard.jpeg) center;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+.header-text {
+  color: aliceblue;
+  margin-left: 150px;
+  padding-top: 300px;
+}
+
+.header-text-large {
+  font-size: 40px;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  height: 150px;
+}
+
+.row-1 {
+  margin: 10px;
+}
+
+@media screen and (max-width: 400px) {
+  .images {
+  }
+}
