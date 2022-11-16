@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  max-width: 480px;
+  width: 100%;
+  margin: auto;
+}
+.header-1 {
+  display: flex;
+  justify-content: space-around;
+  background-color: lightgray;
+}
+.menu {
+  background-color: lightgray;
+  align-items: center;
+}
+.logo-mobile {
+  display: none;
+}
+.dropbtn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.logo {
+  background-color: lightpink;
+  text-align: center;
+  padding: 50px;
+  margin-top: 10px;
+}
+
+.multiplelinks {
+  background-color: lightgray;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.imagesblue {
+  background-color: lightblue;
+  text-align: center;
+  height: 50px;
+}
+
+.main-left ul {
+  text-align: center;
+}
+
+.main-right {
+  background-color: lightgray;
+  margin-top: 10px;
+  padding: 20px;
+}
+.title-img {
+  text-align: center;
+  background-color: whitesmoke;
+  width: 50px;
+  height: 60px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+.imagesbluesmall {
+  background-color: aquamarine;
+}
+.white {
+  background-color: white;
+  padding: 10px;
+}
+.gray {
+  background-color: lightgray;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+.desc {
+  background-color: lightgray;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.settings {
+  padding-top: 10px;
+}
+.main-foot {
+  background-color: lightcyan;
+  padding: 10px;
+}
+button {
+  margin-top: 10px;
+}
+.settings {
+  background-color: lightcyan;
+  padding: 10px;
+}
+.ending {
+  background-color: lightcyan;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .logo-mobile {
+    display: block;
+    background-color: lightpink;
+    width: 60%;
+    text-align: center;
+  }
+  .logo {
+    display: none;
+  }
+  .multiplelinks {
+    display: flex;
+    justify-content: space-around;
+  }
+  .imagesblue {
+    background-color: lightblue;
+    text-align: center;
+    padding: 15px;
+  }
+  .main-all {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .main-right {
+    display: flex;
+  }
+  .main-left {
+    width: 30%;
+    margin-right: 30px;
+  }
+  .white {
+    height: 300px;
+  }
+  .desc {
+    display: none;
+  }
+  .settings {
+    display: flex;
+    gap: 20px;
+  }
+  input {
+    width: 100px;
+  }
+  .main-foot {
+    background-color: lightcyan;
+    height: 100px;
+  }
+  .ending {
+    display: flex;
+    margin-top: 20px;
+  }
+  .footer-left {
+    width: 60%;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .logo-mobile {
+    display: block;
+    background-color: lightpink;
+    width: 60%;
+    text-align: center;
+  }
+  .logo {
+    display: none;
+  }
+}
