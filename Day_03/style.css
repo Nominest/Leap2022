@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
+  text-decoration: none;
+  color: black;
 }
+
 .container {
   max-width: 480px;
   width: 100%;
@@ -41,14 +44,22 @@
   background-color: lightgray;
   padding: 10px;
   margin-top: 10px;
+  text-align: center;
 }
 
 .imagesblue {
-  background-color: lightblue;
-  text-align: center;
-  height: 50px;
+  height: 100px;
+  width: 200px;
+  border-radius: 10%;
 }
-
+.smallimg {
+  height: 50px;
+  width: 50px;
+  border-radius: 10%;
+}
+.main-left {
+  margin-bottom: 20px;
+}
 .main-left ul {
   text-align: center;
 }
@@ -65,7 +76,12 @@
   height: 60px;
   text-align: center;
   margin: auto;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
+}
+.largeimg {
+  width: 200px;
+  height: 100px;
+  margin-left: 70px;
 }
 
 .imagesbluesmall {
@@ -94,6 +110,7 @@
 .main-foot {
   background-color: lightcyan;
   padding: 10px;
+  margin-top: 10px;
 }
 button {
   margin-top: 10px;
@@ -104,6 +121,13 @@ button {
 }
 .ending {
   background-color: lightcyan;
+  text-align: center;
+}
+input {
+  display: block;
+}
+.desktop-button {
+  text-align: center;
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -156,10 +180,14 @@ button {
   .ending {
     display: flex;
     margin-top: 20px;
+    justify-content: space-between;
   }
   .footer-left {
     width: 60%;
     display: flex;
+  }
+  .desktop-button {
+    margin-left: 315px;
   }
 }
 
@@ -167,7 +195,6 @@ button {
   .logo-mobile {
     display: block;
     background-color: lightpink;
-    width: 60%;
     text-align: center;
   }
   .logo {
@@ -176,10 +203,42 @@ button {
   .main-page {
     display: flex;
   }
-  .main-left {
-    width: 20%;
-  }
+
   .main-right {
-    width: 60%;
+    display: flex;
+    gap: 50px;
+  }
+  .main-all {
+    display: flex;
+  }
+  .desktop {
+    display: flex;
+  }
+  .multiplelinks {
+    margin-right: 20px;
+  }
+
+  .ending {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+  }
+  .footer-left {
+    display: flex;
+  }
+  .main-foot {
+    background-color: lightcyan;
+  }
+  .settings {
+    display: flex;
+    gap: 10px;
+  }
+  input {
+    width: 80px;
+    gap: 10px;
+  }
+  .desktop-button {
+    width: 100%;
+    margin-left: 223px;
   }
 }
