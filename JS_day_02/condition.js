@@ -1,10 +1,9 @@
-// ==; !==
+// // ==; !==
 // let a = 20;
 // let b = 20;
 // let answer = a == b;
 // console.log(answer);
 
-// if
 // let age = 21;
 // if (age >= 21) {
 //   console.log("Allowed");
@@ -12,7 +11,7 @@
 //   console.log("Not Allowed");
 // }
 
-//if example 2
+// if example 2
 // let myAge = 55;
 // if (myAge < 11) {
 //   console.log("baby");
@@ -24,7 +23,7 @@
 //   console.log("old");
 // }
 
-//challenge
+// //challenge
 // let day = 1;
 
 // if (day === 1) {
@@ -45,7 +44,7 @@
 //   console.log("Not found");
 // }
 
-//challenge
+// //challenge
 
 // let day = prompt("Enter number");
 // let weekname;
@@ -76,7 +75,7 @@
 //   alert("Name :" + weekname);
 // }
 
-// || ali neg ni biylsen tohioldold
+// // || ali neg ni biylsen tohioldold
 // let weekday = 10;
 
 // if (weekday < 1 || weekday > 7) {
@@ -97,7 +96,7 @@
 //   console.log("Error");
 // }
 
-//switch
+// //switch
 // let weekday = 8;
 
 // switch (weekday) {
@@ -126,7 +125,7 @@
 //     console.log("Not a Day");
 // }
 
-//switch break //if (weekday==1 || weekday==2 || weekday==3 || weekday==4 || weekday==5)
+// //switch break //if (weekday==1 || weekday==2 || weekday==3 || weekday==4 || weekday==5)
 // let weekday = 6;
 
 // switch (weekday) {
@@ -145,7 +144,7 @@
 //     console.log("Not a day");
 // }
 
-//dasgal solution 1
+// //dasgal solution 1
 // let x = 10,
 //   y = 30,
 //   z = 40;
@@ -161,14 +160,14 @@
 //   }
 // }
 
-dasgal solution 2
-let x = 10,
-  y = 30,
-  z = 40;
-if (x > y && x > z) {
-  console.log(x, " n hamgiin ih");
-} else if (y > z) {
-  console.log(y, " n hamgiin ih");
-} else {
-  console.log(z, " n hamgiin ih");
-}
+// dasgal solution 2
+// let x = 10,
+//   y = 30,
+//   z = 40;
+// if (x > y && x > z) {
+//   console.log(x, " n hamgiin ih");
+// } else if (y > z) {
+//   console.log(y, " n hamgiin ih");
+// } else {
+//   console.log(z, " n hamgiin ih");
+// }
