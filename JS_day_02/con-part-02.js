@@ -13,7 +13,7 @@
 //   console.log("your are allowed");
 // }
 let age =13;
-
+age < 21;
 console.log("you are not allowed");
 console.log("you are allowed");
 condition ? true : false;
