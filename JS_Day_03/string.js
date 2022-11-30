@@ -44,7 +44,8 @@
 // console.log(str.substring(0, 10));
 // console.log(str.substring(11, 18));
 
-// // indexof() bairshil oloh is arilgav
+// // indexof() bairshil oloh
+// // is arilgav
 // let str = "This is a string";
 // console.log(str.indexOf("is"));
 // let firstpart = str.substring(0, str.indexOf("is"));
@@ -61,4 +62,8 @@
 // let strippedstring = rawstring.trim();
 // console.log(strippedstring);
 
-// //
+// // number to string
+let number = 2000;
+let strNum = number.toString();
+console.log(typeof number);
+console.log(typeof strNum);
