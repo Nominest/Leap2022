@@ -41,6 +41,22 @@ while (num100 <= 100) {
 }
 console.log(sum);
 
+// //break 2 while
+// let x = 10;
+// let count = 1;
+// let output = " ";
+// while (x > 0) {
+//   let y = 10;
+//   while (y > 0) {
+//     output = output + count + "\t"; // output = output + count + " "
+//     if (count % 20 == 0) output += "\n"; // output = output + /n
+//     y--;
+//     count++;
+//   }
+//   x--;
+// }
+// console.log(output);
+
 //break 2 while
 let x = 10;
 let count = 1;
