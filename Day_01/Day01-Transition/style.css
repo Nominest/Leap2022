@@ -6,6 +6,7 @@ button {
   font-size: 30px;
   border: none;
   border-radius: 30px;
+  margin-bottom: 10px;
 }
 
 button:hover {
@@ -21,10 +22,13 @@ button:active {
   color: white;
   width: 500px;
 }
-input {
+input{
   color: white;
   width: 200px;
 }
-input:hover {
+input :hover {
   width: 400px;
+}
+.click {
+  display: block;
 }

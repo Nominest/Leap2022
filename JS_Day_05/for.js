@@ -29,21 +29,21 @@
 // }
 // console.log(output1);
 
-// // hollow box
-// let output1 = "";
-// let n = 9;
-// for (let row = 1; row < n; row++) {
-//   for (let col = 1; col < n; col++) {
-//     if (row == 1 || row == n - 1 || col == 1 || col == n - 1) {
-//       output1 += "*";
-//     } else {
-//       output1 += " ";
-//     }
-//   }
+// hollow box
+let output1 = "";
+let n = 9;
+for (let row = 1; row < n; row++) {
+  for (let col = 1; col < n; col++) {
+    if (row == 1 || row == n - 1 || col == 1 || col == n - 1) {
+      output1 += "*";
+    } else {
+      output1 += " ";
+    }
+  }
 
-//   output1 += "\n";
-// }
-// console.log(output1);
+  output1 += "\n";
+}
+console.log(output1);
 
 // //
 // let output = "";
@@ -112,18 +112,27 @@
 //   console.log("No");
 // }
 
-//prime with break
+// //prime with break
 
-let n = 10;
-let prime = true;
-for (let i = 2; i < n; i++) {
-  if (n % i == 0) {
-    prime = false;
-    break;
-  }
-}
-if (prime) {
-  console.log("Yes");
-} else {
-  console.log("No");
+// let n = 10;
+// let prime = true;
+// for (let i = 2; i < n; i++) {
+//   if (n % i == 0) {
+//     prime = false;
+//     break;
+//   }
+// }
+// if (prime) {
+//   console.log("Yes");
+// } else {
+//   console.log("No");
+// }
+
+
+// tegsh untsugt
+let count = 1;
+let x = "* ";
+for (a = 0; a<=5; a +=1){
+    console.log(x.repeat(count));
+    count +=1;
 }
