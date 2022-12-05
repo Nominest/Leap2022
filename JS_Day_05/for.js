@@ -29,21 +29,21 @@
 // }
 // console.log(output1);
 
-// hollow box
-let output1 = "";
-let n = 9;
-for (let row = 1; row < n; row++) {
-  for (let col = 1; col < n; col++) {
-    if (row == 1 || row == n - 1 || col == 1 || col == n - 1) {
-      output1 += "*";
-    } else {
-      output1 += " ";
-    }
-  }
+// // hollow box
+// let output1 = "";
+// let n = 9;
+// for (let row = 1; row < n; row++) {
+//   for (let col = 1; col < n; col++) {
+//     if (row == 1 || row == n - 1 || col == 1 || col == n - 1) {
+//       output1 += "*";
+//     } else {
+//       output1 += " ";
+//     }
+//   }
 
-  output1 += "\n";
-}
-console.log(output1);
+//   output1 += "\n";
+// }
+// console.log(output1);
 
 // //
 // let output = "";
@@ -128,11 +128,25 @@ console.log(output1);
 //   console.log("No");
 // }
 
+// // tegsh untsugt
+// let count = 1;
+// let x = "* ";
+// for (a = 0; a <= 5; a += 1) {
+//   console.log(x.repeat(count));
+//   count += 1;
+// }
 
-// tegsh untsugt
+//pyramid from numbers
+let output = "";
 let count = 1;
-let x = "* ";
-for (a = 0; a<=5; a +=1){
-    console.log(x.repeat(count));
-    count +=1;
+for (row = 1; row < 4; row++) {
+  for (dash = 4 - row; dash > 0; dash--) {
+    output += " ";
+  }
+  for (let num = 1; num <= row; num++) {
+    output += count + " ";
+    count++;
+  }
+  output += "\n";
 }
+console.log(output);
