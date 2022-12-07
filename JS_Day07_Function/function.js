@@ -42,3 +42,15 @@ let b = (nameIs) => {
   return "Hello" + nameIs;
 };
 console.log(b("run"));
+
+//total payment
+function payment(arrayOfBill) {
+  for (i = 0; i < arrayOfBill.length; i++) {
+    if (arrayOfBill[i] < 30000 && arrayOfBill[i] > 5000) {
+      return arrayOfBill[i] * 0.15 + arrayOfBill[i];
+    } else {
+      return arrayOfBill[i] * 0.2 + arrayOfBill[i];
+    }
+  }
+}
+console.log(payment([3000, 27500, 100000]));
