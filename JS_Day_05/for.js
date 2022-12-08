@@ -112,7 +112,7 @@ console.log(output1);
 //   console.log("No");
 // }
 
-//prime with break
+// //prime with break
 
 // let n = 10;
 // let prime = true;
@@ -127,3 +127,29 @@ console.log(output1);
 // } else {
 //   console.log("No");
 // }
+<<<<<<< HEAD
+=======
+
+// // tegsh untsugt
+// let count = 1;
+// let x = "* ";
+// for (a = 0; a <= 5; a += 1) {
+//   console.log(x.repeat(count));
+//   count += 1;
+// }
+
+//pyramid from numbers
+let output = "";
+let count = 1;
+for (row = 1; row < 4; row++) {
+  for (dash = 4 - row; dash > 0; dash--) {
+    output += " ";
+  }
+  for (let num = 1; num <= row; num++) {
+    output += count + " ";
+    count++;
+  }
+  output += "\n";
+}
+console.log(output);
+>>>>>>> 1dd618b4e02051214efaa5e536e9ed8cdc955b01
