@@ -23,15 +23,15 @@
 //   console.log("else");
 // }
 
-// // longest name
-// let names = ["Batsukh", "Narandelgerekh", "Nomin", "Murun", "Bayanmunkh"];
-// let maxName = "";
-// for (i = 0; i < names.length; i++) {
-//   if (maxName.length < names[i].length) {
-//     maxName = names[i];
-//   }
-// }
-// console.log(maxName.length);
+// longest name
+let names = ["Batsukh", "Narandelgerekh", "Nomin", "Murun", "Bayanmunkh"];
+let maxName = "";
+for (i = 0; i < names.length; i++) {
+  if (maxName.length < names[i].length) {
+    maxName = names[i];
+  }
+}
+console.log(maxName.length);
 
 // //longest name
 // let q = 1;

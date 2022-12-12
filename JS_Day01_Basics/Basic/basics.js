@@ -1,6 +1,11 @@
 let degree = 1,
+<<<<<<< HEAD:JS_Day01_Basics/Basic/basics.js
   farr = 33.8;
 console.log(degree * farr);
+=======
+  far1 = 33.8;
+console.log(degree * far1);
+>>>>>>> c714ae8ee2deeff8e4058c4625b3df062f748a46:JS/Basic/basics.js
 
 //Gegabytes to bits
 // let Gegabytes = 15:

@@ -29,21 +29,21 @@
 // }
 // console.log(output1);
 
-// // hollow box
-// let output1 = "";
-// let n = 9;
-// for (let row = 1; row < n; row++) {
-//   for (let col = 1; col < n; col++) {
-//     if (row == 1 || row == n - 1 || col == 1 || col == n - 1) {
-//       output1 += "*";
-//     } else {
-//       output1 += " ";
-//     }
-//   }
+// hollow box
+let output1 = "";
+let n = 9;
+for (let row = 1; row < n; row++) {
+  for (let col = 1; col < n; col++) {
+    if (row == 1 || row == n - 1 || col == 1 || col == n - 1) {
+      output1 += "*";
+    } else {
+      output1 += " ";
+    }
+  }
 
-//   output1 += "\n";
-// }
-// console.log(output1);
+  output1 += "\n";
+}
+console.log(output1);
 
 // //
 // let output = "";
@@ -127,6 +127,8 @@
 // } else {
 //   console.log("No");
 // }
+<<<<<<< HEAD
+=======
 
 // // tegsh untsugt
 // let count = 1;
@@ -150,3 +152,4 @@ for (row = 1; row < 4; row++) {
   output += "\n";
 }
 console.log(output);
+>>>>>>> 1dd618b4e02051214efaa5e536e9ed8cdc955b01
