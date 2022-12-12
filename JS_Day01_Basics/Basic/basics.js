@@ -1,6 +1,6 @@
 let degree = 1,
-  far = 33.8;
-console.log(degree * far);
+  farr = 33.8;
+console.log(degree * farr);
 
 //Gegabytes to bits
 // let Gegabytes = 15:
