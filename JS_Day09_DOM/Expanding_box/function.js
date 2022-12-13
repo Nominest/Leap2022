@@ -3,12 +3,15 @@ document.getElementsByTagName("div")[0].innerHTML =
 document.getElementsByTagName("div")[0].style.backgroundColor = "green";
 
 let newDiv = document.getElementsByTagName("div")[0];
-let count = 100;
+let countwidth = 100;
+let countheight = 200;
 newDiv.style.border = "10px solid black";
 const myInterval = setInterval(function () {
-  newDiv.style.width = `${count}px`;
-  count++;
-  if (count == 300) {
+  newDiv.style.width = `${countwidth}px`;
+  newDiv.style.height = `${countheight}px`;
+  countwidth++;
+  countheight++;
+  if (countwidth == 300) {
     clearInterval(myInterval);
   }
 }, 1);
