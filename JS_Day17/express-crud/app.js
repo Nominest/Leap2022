@@ -13,14 +13,14 @@ let cars = [
     model: "Prius 30",
     brand: "Toyota",
     image:
-      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FToyota_Prius_%2528XW20%2529&psig=AOvVaw3F6Fq1dZFapOBFQtNrkioE&ust=1672199988116000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCJDH-cP0mPwCFQAAAAAdAAAAABAE",
+      "https://catalogphoto.goo-net.com/carphoto/10102518_201105g.jpg",
   },
   {
     id: 2,
     model: "Prius Alpha",
     brand: "Toyota",
     image:
-      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.goo-net-exchange.com%2Fcatalog%2FTOYOTA__PRIUS_ALPHA%2F10069162%2F&psig=AOvVaw38XEVmIP_bjAxaiQ2N79cS&ust=1672200133375000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCMD7t4n1mPwCFQAAAAAdAAAAABAE",
+      "https://catalogphoto.goo-net.com/carphoto/10102518_201105g.jpg",
   },
   {
     id: 3,
@@ -32,25 +32,25 @@ let cars = [
     id: 4,
     model: "Prius 10",
     brand: "Toyota",
-    image: "",
+    image: "https://catalogphoto.goo-net.com/carphoto/10102518_201105g.jpg",
   },
   {
     id: 5,
     model: "RX 450",
     brand: "Lexus",
-    image: "",
+    image: "https://catalogphoto.goo-net.com/carphoto/10102518_201105g.jpg",
   },
   {
     id: 6,
     model: "RX 350",
     brand: "Lexus",
-    image: "",
+    image: "https://catalogphoto.goo-net.com/carphoto/10102518_201105g.jpg",
   },
   {
     id: 7,
     model: "HS 250",
     brand: "Lexus",
-    image: "",
+    image: "https://catalogphoto.goo-net.com/carphoto/10102518_201105g.jpg",
   },
 ];
 let index = cars.length;
