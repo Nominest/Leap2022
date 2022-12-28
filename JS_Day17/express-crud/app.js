@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-
+const bodyParser = require("body-parser");
 let cars = [
   {
     id: 0,
@@ -12,15 +12,13 @@ let cars = [
     id: 1,
     model: "Prius 30",
     brand: "Toyota",
-    image:
-      "https://catalogphoto.goo-net.com/carphoto/10102518_201105g.jpg",
+    image: "https://catalogphoto.goo-net.com/carphoto/10102518_201105g.jpg",
   },
   {
     id: 2,
     model: "Prius Alpha",
     brand: "Toyota",
-    image:
-      "https://catalogphoto.goo-net.com/carphoto/10102518_201105g.jpg",
+    image: "https://catalogphoto.goo-net.com/carphoto/10102518_201105g.jpg",
   },
   {
     id: 3,
@@ -57,6 +55,7 @@ let index = cars.length;
 
 const app = express();
 app.use(cors());
+app.use(bodyParser());
 
 app.get("/api/cars", (req, res) => {
   res.send(cars);

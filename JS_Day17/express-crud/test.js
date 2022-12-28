@@ -3,17 +3,16 @@ let toyota = document.getElementById("toyota");
 let lexus = document.getElementById("lexus");
 let root = document.getElementById("root");
 let saveBtn = document.getElementById("savebtn");
-// let inputModel = document.getElementById("mark");
+
 root.style.display = "flex";
 root.style.flexWrap = "wrap";
 root.style.gap = "10px";
 
 allbtn.addEventListener("click", () => {
-  root.innerHTML = '';
-    fetch("http://localhost:3333/api/cars")
+  root.innerHTML = "";
+  fetch("http://localhost:3333/api/cars")
     .then((res) => res.json())
     .then((res) => {
-      
       res.map((car) => {
         let newCard = document.createElement("div");
         newCard.innerHTML = `<div class="card" style="width: 18rem;">
@@ -28,17 +27,15 @@ allbtn.addEventListener("click", () => {
       });
     })
     .catch((e) => console.log("e: ", e));
-  
 });
 
-
 toyota.addEventListener("click", () => {
-  root.innerHTML = '';
-    fetch("http://localhost:3333/api/cars")
+  root.innerHTML = "";
+  fetch("http://localhost:3333/api/cars")
     .then((res) => res.json())
     .then((res) => {
-            res.map((car) => {
-        if(car.brand === "Toyota") {
+      res.map((car) => {
+        if (car.brand === "Toyota") {
           let newCard = document.createElement("div");
           newCard.innerHTML = `<div class="card" style="width: 18rem;">
           <img src="${car.image}" class="card-img-top" alt="...">
@@ -48,21 +45,20 @@ toyota.addEventListener("click", () => {
             <a href="#" class="btn btn-primary">More</a>
           </div>
         </div>`;
-        root.appendChild(newCard);
-        } 
-        
+          root.appendChild(newCard);
+        }
       });
     })
     .catch((e) => console.log("e: ", e));
 });
 
 lexus.addEventListener("click", () => {
-  root.innerHTML = '';
-    fetch("http://localhost:3333/api/cars")
+  root.innerHTML = "";
+  fetch("http://localhost:3333/api/cars")
     .then((res) => res.json())
     .then((res) => {
-            res.map((car) => {
-        if(car.brand === "Lexus") {
+      res.map((car) => {
+        if (car.brand === "Lexus") {
           let newCard = document.createElement("div");
           newCard.innerHTML = `<div class="card" style="width: 18rem;">
           <img src="${car.image}" class="card-img-top" alt="...">
@@ -72,23 +68,12 @@ lexus.addEventListener("click", () => {
             <a href="#" class="btn btn-primary">More</a>
           </div>
         </div>`;
-        root.appendChild(newCard);
-        } 
-        
+          root.appendChild(newCard);
+        }
       });
     })
     .catch((e) => console.log("e: ", e));
 });
-
-
-
-
-
-
-
-
-
-
 
 // toyota.addEventListener("click", () => {
 //   root.innerHTML = '';
@@ -97,7 +82,7 @@ lexus.addEventListener("click", () => {
 //     .then((res) => {fetch("http://localhost:3333/api/cars")
 //     .then((res) => res.json())
 //     .then((res) => {
-      
+
 //       res.map((car) => {
 //         let newCard = document.createElement("div");
 //         newCard.innerHTML = `<div class="card" style="width: 18rem;">
@@ -124,20 +109,28 @@ lexus.addEventListener("click", () => {
 //           </div>
 //         </div>`;
 //         root.appendChild(newCard);
-//         } 
-        
+//         }
+
 //       });
 //     })
 //     .catch((e) => console.log("e: ", e));
 // });
 
-// saveBtn.addEventListener("click", () => {
-//     fetch('http://localhost:3333/api/cars', {
-//     method: 'POST',
-//     body: JSON.stringify({ 
-//       model: document.getElementById("model").value,
-//       brand: document.getElementById("brand").value,
-//       image: document.getElementById("image").value })
-//     })
-
-// });
+saveBtn.addEventListener("click", () => {
+  let model = document.getElementById("model").value;
+  let brand = document.getElementById("brand").value;
+  let image = document.getElementById("image").value;
+  fetch("http://localhost:3333/api/cars", {
+    method: "POST",
+    body: JSON.stringify({
+      model: model,
+      brand: brand,
+      image: image,
+    }),
+    headers: {
+      "Content-type": "application/json",
+    },
+  })
+    .then((res) => res.json())
+    .then((res) => console.log(res));
+});
